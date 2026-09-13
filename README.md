@@ -1,5 +1,7 @@
 # Customer Churn Prediction & Explainability
 
+[![CI](https://github.com/Achintya-Narula/customer-churn-ml/actions/workflows/ci.yml/badge.svg)](https://github.com/Achintya-Narula/customer-churn-ml/actions/workflows/ci.yml)
+
 An end-to-end tabular machine-learning project that predicts customer churn using the public **IBM Telco Customer Churn sample dataset**, compares multiple classifiers with stratified cross-validation, explains model behavior, and exposes the selected model through a FastAPI endpoint.
 
 ## Project scope
