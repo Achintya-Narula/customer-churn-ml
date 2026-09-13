@@ -1,0 +1,18 @@
+{
+  "rows": 7043,
+  "churn_rate": 0.2654,
+  "tenure_months_mean": 32.37,
+  "monthly_charges_mean": 64.76,
+  "total_charges_mean": 2283.3,
+  "missing_total_charges": 11,
+  "contract_mix": {
+    "month-to-month": 3875,
+    "two-year": 1695,
+    "one-year": 1473
+  },
+  "internet_mix": {
+    "fiber-optic": 3096,
+    "dsl": 2421,
+    "no": 1526
+  }
+}

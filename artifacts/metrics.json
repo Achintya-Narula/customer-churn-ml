@@ -1,0 +1,84 @@
+{
+  "best_model": "xgboost",
+  "selection_metric": "mean_stratified_cv_roc_auc",
+  "cv_folds": 5,
+  "test_rows": 1761,
+  "selected_threshold": 0.34,
+  "threshold_source": "out-of-fold predictions on the training split",
+  "threshold_metrics_on_holdout": {
+    "precision": 0.5584,
+    "recall": 0.7366,
+    "f1": 0.6353,
+    "roc_auc": 0.8486,
+    "pr_auc": 0.6585,
+    "confusion_matrix": [
+      1022,
+      272,
+      123,
+      344
+    ]
+  },
+  "models": {
+    "logistic_regression": {
+      "precision": 0.6616,
+      "recall": 0.5567,
+      "f1": 0.6047,
+      "roc_auc": 0.8463,
+      "pr_auc": 0.634,
+      "confusion_matrix": [
+        1161,
+        133,
+        207,
+        260
+      ],
+      "cv_roc_auc": 0.8443,
+      "best_params": {
+        "C": 3.0,
+        "class_weight": null
+      }
+    },
+    "random_forest": {
+      "precision": 0.5389,
+      "recall": 0.7859,
+      "f1": 0.6394,
+      "roc_auc": 0.8448,
+      "pr_auc": 0.6451,
+      "confusion_matrix": [
+        980,
+        314,
+        100,
+        367
+      ],
+      "cv_roc_auc": 0.8454,
+      "best_params": {
+        "max_depth": 8,
+        "max_features": "sqrt",
+        "min_samples_leaf": 4,
+        "n_estimators": 450
+      }
+    },
+    "xgboost": {
+      "precision": 0.6648,
+      "recall": 0.5011,
+      "f1": 0.5714,
+      "roc_auc": 0.8486,
+      "pr_auc": 0.6585,
+      "confusion_matrix": [
+        1176,
+        118,
+        233,
+        234
+      ],
+      "cv_roc_auc": 0.8486,
+      "best_params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 2,
+        "min_child_weight": 3,
+        "n_estimators": 350,
+        "reg_lambda": 1,
+        "subsample": 0.85
+      }
+    }
+  }
+}

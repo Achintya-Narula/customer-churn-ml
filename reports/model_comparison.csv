@@ -1,0 +1,4 @@
+model,cv_roc_auc,holdout_roc_auc,holdout_pr_auc,precision_at_0_5,recall_at_0_5,f1_at_0_5
+logistic_regression,0.8443,0.8463,0.634,0.6616,0.5567,0.6047
+random_forest,0.8454,0.8448,0.6451,0.5389,0.7859,0.6394
+xgboost,0.8486,0.8486,0.6585,0.6648,0.5011,0.5714
